@@ -22,7 +22,7 @@ python3 lmpsgen.py -n John -l Smith -y 2002 -ls -sc -o my_wordlist.txt
     -l      Target's last name
     -y      Target's birth year or important dates
     -p      Target's pet name
-    -a      Custom keywords (comma-separated, e.g. -a RealMadrid,Lakers)
+    -a      Custom keywords (comma-separated, e.g. -a "RealMadrid,Lakers")
     -o      Output file name (default: wordlist.txt)
     -c      Combination depth for words chaining (default: 2)
     -ls     Enable leetspeak mutations (a->4, e->3, o->0, i->1)
