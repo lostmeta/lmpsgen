@@ -29,3 +29,4 @@ python3 lmpsgen.py -n John -l Smith -y 2002 -ls -sc -o my_wordlist.txt
     -sc     Add special characters. Empty for default (!@#$?) or custom (e.g. -sc '!_')
     -v      Enable verbose real-time logging
 ```
+<img width="933" height="204" alt="изображение" src="https://github.com/user-attachments/assets/d8e61d13-f063-40c6-a9a9-2d17b309d0d2" />
