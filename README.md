@@ -1,8 +1,11 @@
 # lmpsgen - Lostmeta. Password wordlist generator
 
+### Quick start
+```bash
+python3 lmpsgen.py -c 2
+```
 
 ### Options
-
 ```text
 options:
   -h, --help     show this help message and exit
