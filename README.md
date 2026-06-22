@@ -1,32 +1,31 @@
 # lmpsgen - Lostmeta. Password wordlist generator
 
-### Quick start
+## Quick Start
+
+Clone the repository and run the tool:
 ```bash
-python3 lmpsgen.py
+git clone https://github.com/lostmeta/lmpsgen.git
+cd lmpsgen
+python3 lmpsgen.py -h
+```
+
+## Example of work
+Generate wordlists instantly using specific command-line arguments:
+```bash
+python3 lmpsgen.py -n John -l Smith -y 2002 -ls -sc -o my_wordlist.txt
 ```
 
 ### Options
 ```text
-options:
-  -h, --help     show this help message and exit
-  -v, --verbose  Enable verbose output (detailed logging)
-  -c COMBO       Combination depth (e.g., -c 2 chains two words together)
+    -h      Show this help menu and exit
+    -n      Target's first name
+    -l      Target's last name
+    -y      Target's birth year or important dates
+    -p      Target's pet name
+    -a      Custom keywords (comma-separated, e.g. -a RealMadrid,Lakers)
+    -o      Output file name (default: wordlist.txt)
+    -c      Combination depth for words chaining (default: 2)
+    -ls     Enable leetspeak mutations (a->4, e->3, o->0, i->1)
+    -sc     Add special characters. Empty for default (!@#$?) or custom (e.g. -sc '!_')
+    -v      Enable verbose real-time logging
 ```
-**1. Standard Interactive Mode (Quiet)**
-Generates a list of words by concatenating two words or numbers (SmithJohn, EmmaJohn).
-```bash
-python3 lmpsgen.py -c 2
-```
-
-**2. Live Verbose Mode**
-See words being added to the list in real-time.
-```bash
-python3 lmpsgen.py -c 2 -v
-```
-
-**3. Custom Combination Depth**
-The Custom Combination Depth function generates a list of words by combining three words or numbers (SmithJohn2002, 2002EmmaJohn).
-```bash
-python3 lmpsgen.py -c 3 -v
-```
-<img width="565" height="417" alt="изображение" src="https://github.com/user-attachments/assets/2d1af5f1-9563-487d-b677-923a1abcff83" />
