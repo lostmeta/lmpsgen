@@ -2,7 +2,7 @@
 
 ### Quick start
 ```bash
-python3 lmpsgen.py -c 2
+python3 lmpsgen.py
 ```
 
 ### Options
